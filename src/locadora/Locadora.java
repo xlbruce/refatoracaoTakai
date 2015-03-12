@@ -2,8 +2,12 @@ package locadora;
 
 /**
  *
- * @author 31409695
+ * Alunos:
+ *  André Lucas Ota - 31417132
+ *  Antonio Nunes - 31440983
+ *  Gilson da Silva - 31409695
  */
+
 public class Locadora {
 
     /**
