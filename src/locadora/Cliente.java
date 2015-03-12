@@ -53,11 +53,14 @@ public class Cliente {
         
         // Adiciona rodapé
         resultado += "Valor total devido: " + valorTotal + fimDeLinha;
+        /*Neste caso, os pontos de aluguél são acumulativos, portanto criamos uma variável no cliente.
+        Desta forma, o "pontosDeAlugadorFrequente" NÃO é uma variável temporária
+        */
         resultado += "Voce acumulou " + pontosDeAlugadorFrequente
                 + " pontos de alugador frequente";
         return resultado;
     }
-
+    
     public void getPontos(Aluguel f) {
         // adiciona bonus para aluguel de um lançamento por pelo menos 2
         // dias
