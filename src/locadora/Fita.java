@@ -6,26 +6,26 @@ public class Fita {
         NORMAL, LANCAMENTO, INFANTIL
     };
     
-    private String título;
+    private String titulo;
     private Tipo códigoDePreço;
     
     public Fita(String título, Tipo códigoDePreço) {
-        this.título = título;
+        this.titulo = título;
         this.códigoDePreço = códigoDePreço;
     }
-    public String getTítulo() {
-        return título;
+    public String getTitulo() {
+        return titulo;
     }
-    public Tipo getCódigoDePreço() {
+    public Tipo getCodigoDePreço() {
         return códigoDePreço;
     }
-    public void setCódigoDePreço(Tipo códigoDePreço) {
+    public void setCodigoDePreço(Tipo códigoDePreço) {
         this.códigoDePreço = códigoDePreço;
     }
 
     @Override
     public String toString() {
-        return "Fita{" + "t\u00edtulo=" + título + ", c\u00f3digoDePre\u00e7o=" + códigoDePreço + '}';
+        return "Fita{" + "t\u00edtulo=" + titulo + ", c\u00f3digoDePre\u00e7o=" + códigoDePreço + '}';
     }
     
     

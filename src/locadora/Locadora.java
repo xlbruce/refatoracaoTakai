@@ -16,6 +16,14 @@ public class Locadora {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Cliente c = new Cliente("Gilson");
+        Fita f1 = new Fita("Filme 01", Fita.Tipo.NORMAL);
+        Fita f2 = new Fita("Filme 02", Fita.Tipo.NORMAL);
+        Aluguel aluguel1 = new Aluguel(f1, 1);
+        Aluguel aluguel2 = new Aluguel(f2, 1);
+        c.adicionaAluguel(aluguel1);
+        c.adicionaAluguel(aluguel2);
+        System.out.println(c.extrato());
     }
     
 }

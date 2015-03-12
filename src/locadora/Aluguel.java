@@ -23,6 +23,28 @@ public class Aluguel {
     public int getDiasAlugada() {
         return diasAlugada;
     }
+    
+    public double calcula() {
+        double valorCorrente = 0;
+        switch (this.getFita().getCodigoDePreço()) {
+            case NORMAL:
+                valorCorrente += 2;
+                if (this.getDiasAlugada() > 2) {
+                    valorCorrente += (this.getDiasAlugada() - 2) * 1.5;
+                }
+                break;
+            case LANCAMENTO:
+                valorCorrente += this.getDiasAlugada() * 3;
+                break;
+            case INFANTIL:
+                valorCorrente += 1.5;
+                if (this.getDiasAlugada() > 3) {
+                    valorCorrente += (this.getDiasAlugada() - 3) * 1.5;
+                }
+                break;
+        }
+        return valorCorrente;
+    }
 
     @Override
     public String toString() {
