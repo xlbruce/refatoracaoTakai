@@ -1,0 +1,21 @@
+
+Cliente:
+* Fazer pedido
+* Solicitar o status do pedido
+
+
+Atendente:
+* Registrar Pedido
+* Fornecer o status do pedido
+* Enviar o pedido para o depósito
+* Enviar formulário de pedido
+
+
+Sistema de depósito:                 
+* Enviar pedido 
+* Receber dados de mercadorias entregues
+
+
+Sistema de contas e receber:
+* Receber formulário de pedido
+* Registrar formulário de pedido
